@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5%;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    width: 500px;
+}
+
+li {
+    padding-left: 10%;
+    background-color: #a5ccdb;
+    line-height: 40px;
+}
+
+li.next {
+    background-color: #add9e6;
+}
+
+li.done {
+    background-color: #e2e2e2;
+}
+li.done > span {
+    text-decoration: line-through;
+}
+
+li:before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url('icons/unchecked_16.png');
+    background-size: cover;
+    margin-right: 5%;
+    vertical-align: middle;
+}
+
+li.done::before {
+    background-image: url('icons/checked_16.png');
+}
+
+li:after {
+    padding-left: 10%;
+    content: '❌';
+    font-size:x-small;
+}
